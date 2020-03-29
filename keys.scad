@@ -9,7 +9,13 @@ include <./includes.scad>
 
 
 // example key
-dcs_row(5) legend("⇪", size=9) key();
+//dcs_row(5) legend("⇪", size=9) key();
+// ROW 1
+$font="Font Awesome:style=Regular";
+sa_row(1, 0) front_legend("", position=[-0.8, -0.7], size=5) legend("", position=[0.5, 0.4], size=7) key();
+
+//sa_row(4, 0) legend("Y", position=[0.5, 0.4], size=7) key();
+
 
 // example row
 /* for (x = [0:1:4]) {
@@ -18,3 +24,5 @@ dcs_row(5) legend("⇪", size=9) key();
 
 // example layout
 /* preonic_default("dcs"); */
+
+//dactyl_manuform_4x6_legends("hipro") key();
